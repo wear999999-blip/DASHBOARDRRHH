@@ -55,6 +55,7 @@ try:
     # 5. ANÁLISIS DE DESEMPEÑO Y ANTIGÜEDAD (Gráficos)
     col_a, col_b = st.columns(2)
 
+
     with col_a:
         # Relación Edad vs Salario por Género
         st.subheader("Distribución por Edad y Género")
