@@ -14,8 +14,7 @@ st.set_page_config(page_title="Análisis de Nómina y Desempeño", layout="wide"
 # 2. CARGA DE DATOS (Ruta específica solicitada)
 @st.cache_data
 def load_data():
-    ruta = r"C:\Users\wear_\OneDrive\Desktop\dashboard_rrhh\employees.csv"
-    df = pd.read_csv(ruta)
+    df = pd.read_csv("employees.csv")
     # Limpieza: Asegurar que las columnas estén en mayúsculas para evitar errores
     df.columns = [c.upper() for c in df.columns]
     return df
